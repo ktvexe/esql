@@ -1,0 +1,1099 @@
+/* A Bison parser, made by GNU Bison 3.0.2.  */
+
+/* Bison interface for Yacc-like parsers in C
+
+   Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
+
+/* As a special exception, you may create a larger work that contains
+   part or all of the Bison parser skeleton and distribute that work
+   under terms of your choice, so long as that work isn't itself a
+   parser generator using the skeleton or a modified version thereof
+   as a parser skeleton.  Alternatively, if you modify or redistribute
+   the parser skeleton itself, you may (at your option) remove this
+   special exception, which will cause the skeleton and the resulting
+   Bison output files to be licensed under the GNU General Public
+   License without this special exception.
+
+   This special exception was added by the Free Software Foundation in
+   version 2.2 of Bison.  */
+
+#ifndef YY_YY_Y_TAB_H_INCLUDED
+# define YY_YY_Y_TAB_H_INCLUDED
+/* Debug traces.  */
+#ifndef YYDEBUG
+# define YYDEBUG 0
+#endif
+#if YYDEBUG
+extern int yydebug;
+#endif
+
+/* Token type.  */
+#ifndef YYTOKENTYPE
+# define YYTOKENTYPE
+  enum yytokentype
+  {
+    END = 0,
+    K_ADD = 258,
+    K_ALL = 259,
+    K_ALLOCATE = 260,
+    K_ALTER = 261,
+    K_ANY = 262,
+    K_ARE = 263,
+    K_ARRAY = 264,
+    K_AS = 265,
+    K_ASENSITIVE = 266,
+    K_ASYMMETRIC = 267,
+    K_AT = 268,
+    K_ATOMIC = 269,
+    K_AUTHORIZATION = 270,
+    K_BEGIN = 271,
+    K_BETWEEN = 272,
+    K_BIGINT = 273,
+    K_BINARY = 274,
+    K_BIT = 275,
+    K_BLOB = 276,
+    K_BOOLEAN = 277,
+    K_BOTH = 278,
+    K_BY = 279,
+    K_CALL = 280,
+    K_CALLED = 281,
+    K_CASCADED = 282,
+    K_CASE = 283,
+    K_CAST = 284,
+    K_CHAR = 285,
+    K_CHARACTER = 286,
+    K_CHECK = 287,
+    K_CLOB = 288,
+    K_CLOSE = 289,
+    K_COLLATE = 290,
+    K_COLUMN = 291,
+    K_COMMIT = 292,
+    K_CONNECT = 293,
+    K_CONSTRAINT = 294,
+    K_CONTINUE = 295,
+    K_CORRESPONDING = 296,
+    K_CREATE = 297,
+    K_CROSS = 298,
+    K_CUBE = 299,
+    K_CURRENT = 300,
+    K_CURRENT_DATE = 301,
+    K_CURRENT_DEFAULT_TRANSFORM_GROUP = 302,
+    K_CURRENT_PATH = 303,
+    K_CURRENT_ROLE = 304,
+    K_CURRENT_TIME = 305,
+    K_CURRENT_TIMESTAMP = 306,
+    K_CURRENT_TRANSFORM_GROUP_FOR_TYPE = 307,
+    K_CURRENT_USER = 308,
+    K_CURSOR = 309,
+    K_CYCLE = 310,
+    K_DATE = 311,
+    K_DAY = 312,
+    K_DEALLOCATE = 313,
+    K_DEC = 314,
+    K_DECIMAL = 315,
+    K_DECLARE = 316,
+    K_DEFAULT = 317,
+    K_DELETE = 318,
+    K_DEREF = 319,
+    K_DESCRIBE = 320,
+    K_DETERMINISTIC = 321,
+    K_DISCONNECT = 322,
+    K_DISTINCT = 323,
+    K_DOUBLE = 324,
+    K_DROP = 325,
+    K_DYNAMIC = 326,
+    K_EACH = 327,
+    K_ELEMENT = 328,
+    K_ELSE = 329,
+    K_END = 330,
+    K_END_EXEC = 331,
+    K_ESCAPE = 332,
+    K_EXCEPT = 333,
+    K_EXEC = 334,
+    K_EXECUTE = 335,
+    K_EXISTS = 336,
+    K_EXTERNAL = 337,
+    K_FALSE = 338,
+    K_FETCH = 339,
+    K_FILTER = 340,
+    K_FLOAT = 341,
+    K_FOR = 342,
+    K_FOREIGN = 343,
+    K_FREE = 344,
+    K_FROM = 345,
+    K_FULL = 346,
+    K_FUNCTION = 347,
+    K_GET = 348,
+    K_GLOBAL = 349,
+    K_GRANT = 350,
+    K_GROUP = 351,
+    K_GROUPING = 352,
+    K_HAVING = 353,
+    K_HOLD = 354,
+    K_HOUR = 355,
+    K_IDENTITY = 356,
+    K_IMMEDIATE = 357,
+    K_IN = 358,
+    K_INDICATOR = 359,
+    K_INNER = 360,
+    K_INOUT = 361,
+    K_INPUT = 362,
+    K_INSENSITIVE = 363,
+    K_INSERT = 364,
+    K_INT = 365,
+    K_INTEGER = 366,
+    K_INTERSECT = 367,
+    K_INTERVAL = 368,
+    K_INTO = 369,
+    K_IS = 370,
+    K_ISOLATION = 371,
+    K_JOIN = 372,
+    K_LANGUAGE = 373,
+    K_LARGE = 374,
+    K_LATERAL = 375,
+    K_LEADING = 376,
+    K_LEFT = 377,
+    K_LIKE = 378,
+    K_LOCAL = 379,
+    K_LOCALTIME = 380,
+    K_LOCALTIMESTAMP = 381,
+    K_MATCH = 382,
+    K_MEMBER = 383,
+    K_MERGE = 384,
+    K_METHOD = 385,
+    K_MINUTE = 386,
+    K_MODIFIES = 387,
+    K_MODULE = 388,
+    K_MONTH = 389,
+    K_MULTISET = 390,
+    K_NATIONAL = 391,
+    K_NATURAL = 392,
+    K_NCHAR = 393,
+    K_NCLOB = 394,
+    K_NEW = 395,
+    K_NO = 396,
+    K_NONE = 397,
+    K_NULL = 398,
+    K_NUMERIC = 399,
+    K_OF = 400,
+    K_OLD = 401,
+    K_ON = 402,
+    K_ONLY = 403,
+    K_OPEN = 404,
+    K_ORDER = 405,
+    K_OUT = 406,
+    K_OUTER = 407,
+    K_OUTPUT = 408,
+    K_OVER = 409,
+    K_OVERLAPS = 410,
+    K_PARAMETER = 411,
+    K_PARTITION = 412,
+    K_PRECISION = 413,
+    K_PREPARE = 414,
+    K_PRIMARY = 415,
+    K_PROCEDURE = 416,
+    K_RANGE = 417,
+    K_READS = 418,
+    K_REAL = 419,
+    K_RECURSIVE = 420,
+    K_REF = 421,
+    K_REFERENCES = 422,
+    K_REFERENCING = 423,
+    K_REGR_AVGX = 424,
+    K_REGR_AVGY = 425,
+    K_REGR_COUNT = 426,
+    K_REGR_INTERCEPT = 427,
+    K_REGR_R2 = 428,
+    K_REGR_SLOPE = 429,
+    K_REGR_SXX = 430,
+    K_REGR_SXY = 431,
+    K_REGR_SYY = 432,
+    K_RELEASE = 433,
+    K_RESULT = 434,
+    K_RETURN = 435,
+    K_RETURNS = 436,
+    K_REVOKE = 437,
+    K_RIGHT = 438,
+    K_ROLLBACK = 439,
+    K_ROLLUP = 440,
+    K_ROW = 441,
+    K_ROWS = 442,
+    K_SAVEPOINT = 443,
+    K_SCROLL = 444,
+    K_SEARCH = 445,
+    K_SECOND = 446,
+    K_SELECT = 447,
+    K_SENSITIVE = 448,
+    K_SESSION_USER = 449,
+    K_SET = 450,
+    K_SIMILAR = 451,
+    K_SMALLINT = 452,
+    K_SOME = 453,
+    K_SPECIFIC = 454,
+    K_SPECIFICTYPE = 455,
+    K_SQL = 456,
+    K_SQLEXCEPTION = 457,
+    K_SQLSTATE = 458,
+    K_SQLWARNING = 459,
+    K_START = 460,
+    K_STATIC = 461,
+    K_SUBMULTISET = 462,
+    K_SYMMETRIC = 463,
+    K_SYSTEM = 464,
+    K_SYSTEM_USER = 465,
+    K_TABLE = 466,
+    K_THEN = 467,
+    K_TIME = 468,
+    K_TIMESTAMP = 469,
+    K_TIMEZONE_HOUR = 470,
+    K_TIMEZONE_MINUTE = 471,
+    K_TO = 472,
+    K_TRAILING = 473,
+    K_TRANSLATION = 474,
+    K_TREAT = 475,
+    K_TRIGGER = 476,
+    K_TRUE = 477,
+    K_UESCAPE = 478,
+    K_UNION = 479,
+    K_UNIQUE = 480,
+    K_UNKNOWN = 481,
+    K_UNNEST = 482,
+    K_UPDATE = 483,
+    K_UPPER = 484,
+    K_USER = 485,
+    K_USING = 486,
+    K_VALUE = 487,
+    K_VALUES = 488,
+    K_VAR_POP = 489,
+    K_VAR_SAMP = 490,
+    K_VARCHAR = 491,
+    K_VARYING = 492,
+    K_WHEN = 493,
+    K_WHENEVER = 494,
+    K_WHERE = 495,
+    K_WIDTH_BUCKET = 496,
+    K_WINDOW = 497,
+    K_WITH = 498,
+    K_WITHIN = 499,
+    K_WITHOUT = 500,
+    K_YEAR = 501,
+    K_A = 502,
+    K_ABS = 503,
+    K_ABSOLUTE = 504,
+    K_ACTION = 505,
+    K_ADA = 506,
+    K_ADMIN = 507,
+    K_AFTER = 508,
+    K_ALWAYS = 509,
+    K_ASC = 510,
+    K_ASSERTION = 511,
+    K_ASSIGNMENT = 512,
+    K_ATTRIBUTE = 513,
+    K_ATTRIBUTES = 514,
+    K_AVG = 515,
+    K_BEFORE = 516,
+    K_BERNOULLI = 517,
+    K_BREADTH = 518,
+    K_C = 519,
+    K_CARDINALITY = 520,
+    K_CASCADE = 521,
+    K_CATALOG = 522,
+    K_CATALOG_NAME = 523,
+    K_CEIL = 524,
+    K_CEILING = 525,
+    K_CHAIN = 526,
+    K_CHARACTERISTICS = 527,
+    K_CHARACTERS = 528,
+    K_CHARACTER_LENGTH = 529,
+    K_CHARACTER_SET_CATALOG = 530,
+    K_CHARACTER_SET_NAME = 531,
+    K_CHARACTER_SET_SCHEMA = 532,
+    K_CHAR_LENGTH = 533,
+    K_CHECKED = 534,
+    K_CLASS_ORIGIN = 535,
+    K_COALESCE = 536,
+    K_COBOL = 537,
+    K_CODE_UNITS = 538,
+    K_COLLATION = 539,
+    K_COLLATION_CATALOG = 540,
+    K_COLLATION_NAME = 541,
+    K_COLLATION_SCHEMA = 542,
+    K_COLLECT = 543,
+    K_COLUMN_NAME = 544,
+    K_COMMAND_FUNCTION = 545,
+    K_COMMAND_FUNCTION_CODE = 546,
+    K_COMMITTED = 547,
+    K_CONDITION = 548,
+    K_CONDITION_NUMBER = 549,
+    K_CONNECTION_NAME = 550,
+    K_CONSTRAINTS = 551,
+    K_CONSTRAINT_CATALOG = 552,
+    K_CONSTRAINT_NAME = 553,
+    K_CONSTRAINT_SCHEMA = 554,
+    K_CONSTRUCTORS = 555,
+    K_CONTAINS = 556,
+    K_CONVERT = 557,
+    K_CORR = 558,
+    K_COUNT = 559,
+    K_COVAR_POP = 560,
+    K_COVAR_SAMP = 561,
+    K_CUME_DIST = 562,
+    K_CURRENT_COLLATION = 563,
+    K_CURSOR_NAME = 564,
+    K_DATA = 565,
+    K_DATETIME_INTERVAL_CODE = 566,
+    K_DATETIME_INTERVAL_PRECISION = 567,
+    K_DEFAULTS = 568,
+    K_DEFERRABLE = 569,
+    K_DEFERRED = 570,
+    K_DEFINED = 571,
+    K_DEFINER = 572,
+    K_DEGREE = 573,
+    K_DENSE_RANK = 574,
+    K_DEPTH = 575,
+    K_DERIVED = 576,
+    K_DESC = 577,
+    K_DESCRIPTOR = 578,
+    K_DIAGNOSTICS = 579,
+    K_DISPATCH = 580,
+    K_DOMAIN = 581,
+    K_DYNAMIC_FUNCTION = 582,
+    K_DYNAMIC_FUNCTION_CODE = 583,
+    K_EQUALS = 584,
+    K_EVERY = 585,
+    K_EXCEPTION = 586,
+    K_EXCLUDE = 587,
+    K_EXCLUDING = 588,
+    K_EXP = 589,
+    K_EXTRACT = 590,
+    K_FINAL = 591,
+    K_FIRST = 592,
+    K_FLOOR = 593,
+    K_FOLLOWING = 594,
+    K_FORTRAN = 595,
+    K_FOUND = 596,
+    K_FUSION = 597,
+    K_G = 598,
+    K_GENERAL = 599,
+    K_GO = 600,
+    K_GOTO = 601,
+    K_GRANTED = 602,
+    K_HIERARCHY = 603,
+    K_IMPLEMENTATION = 604,
+    K_INCLUDING = 605,
+    K_INCREMENT = 606,
+    K_INITIALLY = 607,
+    K_INSTANCE = 608,
+    K_INSTANTIABLE = 609,
+    K_INTERSECTION = 610,
+    K_INVOKER = 611,
+    K_K = 612,
+    K_KEY = 613,
+    K_KEY_MEMBER = 614,
+    K_KEY_TYPE = 615,
+    K_LAST = 616,
+    K_LENGTH = 617,
+    K_LEVEL = 618,
+    K_LN = 619,
+    K_LOCATOR = 620,
+    K_LOWER = 621,
+    K_M = 622,
+    K_MAP = 623,
+    K_MATCHED = 624,
+    K_MAX = 625,
+    K_MAXVALUE = 626,
+    K_MESSAGE_LENGTH = 627,
+    K_MESSAGE_OCTET_LENGTH = 628,
+    K_MESSAGE_TEXT = 629,
+    K_MIN = 630,
+    K_MINVALUE = 631,
+    K_MOD = 632,
+    K_MORE = 633,
+    K_MUMPS = 634,
+    K_NAME = 635,
+    K_NAMES = 636,
+    K_NESTING = 637,
+    K_NEXT = 638,
+    K_NORMALIZE = 639,
+    K_NORMALIZED = 640,
+    K_NULLABLE = 641,
+    K_NULLIF = 642,
+    K_NULLS = 643,
+    K_NUMBER = 644,
+    K_OBJECT = 645,
+    K_OCTETS = 646,
+    K_OCTET_LENGTH = 647,
+    K_OPTION = 648,
+    K_OPTIONS = 649,
+    K_ORDERING = 650,
+    K_ORDINALITY = 651,
+    K_OTHERS = 652,
+    K_OVERLAY = 653,
+    K_OVERRIDING = 654,
+    K_PAD = 655,
+    K_PARAMETER_MODE = 656,
+    K_PARAMETER_NAME = 657,
+    K_PARAMETER_ORDINAL_POSITION = 658,
+    K_PARAMETER_SPECIFIC_CATALOG = 659,
+    K_PARAMETER_SPECIFIC_NAME = 660,
+    K_PARAMETER_SPECIFIC_SCHEMA = 661,
+    K_PARTIAL = 662,
+    K_PASCAL = 663,
+    K_PATH = 664,
+    K_PERCENTILE_CONT = 665,
+    K_PERCENTILE_DISC = 666,
+    K_PERCENT_RANK = 667,
+    K_PLACING = 668,
+    K_PLI = 669,
+    K_POSITION = 670,
+    K_POWER = 671,
+    K_PRECEDING = 672,
+    K_PRESERVE = 673,
+    K_PRIOR = 674,
+    K_PRIVILEGES = 675,
+    K_PUBLIC = 676,
+    K_RANK = 677,
+    K_READ = 678,
+    K_RELATIVE = 679,
+    K_REPEATABLE = 680,
+    K_RESTART = 681,
+    K_RETURNED_CARDINALITY = 682,
+    K_RETURNED_LENGTH = 683,
+    K_RETURNED_OCTET_LENGTH = 684,
+    K_RETURNED_SQLSTATE = 685,
+    K_ROLE = 686,
+    K_ROUTINE = 687,
+    K_ROUTINE_CATALOG = 688,
+    K_ROUTINE_NAME = 689,
+    K_ROUTINE_SCHEMA = 690,
+    K_ROW_COUNT = 691,
+    K_ROW_NUMBER = 692,
+    K_SCALE = 693,
+    K_SCHEMA = 694,
+    K_SCHEMA_NAME = 695,
+    K_SCOPE_CATALOG = 696,
+    K_SCOPE_NAME = 697,
+    K_SCOPE_SCHEMA = 698,
+    K_SECTION = 699,
+    K_SECURITY = 700,
+    K_SELF = 701,
+    K_SEQUENCE = 702,
+    K_SERIALIZABLE = 703,
+    K_SERVER_NAME = 704,
+    K_SESSION = 705,
+    K_SETS = 706,
+    K_SIMPLE = 707,
+    K_SIZE = 708,
+    K_SOURCE = 709,
+    K_SPACE = 710,
+    K_SPECIFIC_NAME = 711,
+    K_SQRT = 712,
+    K_STATE = 713,
+    K_STATEMENT = 714,
+    K_STDDEV_POP = 715,
+    K_STDDEV_SAMP = 716,
+    K_STRUCTURE = 717,
+    K_STYLE = 718,
+    K_SUBCLASS_ORIGIN = 719,
+    K_SUBSTRING = 720,
+    K_SUM = 721,
+    K_TABLESAMPLE = 722,
+    K_TABLE_NAME = 723,
+    K_TEMPORARY = 724,
+    K_TIES = 725,
+    K_TOP_LEVEL_COUNT = 726,
+    K_TRANSACTION = 727,
+    K_TRANSACTIONS_COMMITTED = 728,
+    K_TRANSACTIONS_ROLLED_BACK = 729,
+    K_TRANSACTION_ACTIVE = 730,
+    K_TRANSFORM = 731,
+    K_TRANSFORMS = 732,
+    K_TRANSLATE = 733,
+    K_TRIGGER_CATALOG = 734,
+    K_TRIGGER_NAME = 735,
+    K_TRIGGER_SCHEMA = 736,
+    K_TRIM = 737,
+    K_TYPE = 738,
+    K_UNBOUNDED = 739,
+    K_UNCOMMITTED = 740,
+    K_UNDER = 741,
+    K_UNNAMED = 742,
+    K_USAGE = 743,
+    K_USER_DEFINED_TYPE_CATALOG = 744,
+    K_USER_DEFINED_TYPE_CODE = 745,
+    K_USER_DEFINED_TYPE_NAME = 746,
+    K_USER_DEFINED_TYPE_SCHEMA = 747,
+    K_VIEW = 748,
+    K_WORK = 749,
+    K_WRITE = 750,
+    K_ZONE = 751,
+    K_TEXT = 752,
+    IDENTIFIER = 753,
+    INTEGER = 754,
+    FLOAT = 755,
+    STRING_LITERAL = 756,
+    T_END = 757,
+    T_COMMA = 758,
+    T_BRACKET_OPEN = 759,
+    T_BRACKET_CLOSE = 760,
+    K_OR = 761,
+    K_AND = 763,
+    T_NOT_EQUALS = 765,
+    T_EQUALS = 767,
+    T_GREATER_THAN = 769,
+    T_LESS_THAN = 771,
+    T_GREATER_THAN_EQUAL = 773,
+    T_LESS_THAN_EQUAL = 775,
+    T_PLUS = 777,
+    T_MINUS = 779,
+    K_NOT = 781,
+    T_ASTERISK = 783,
+    T_DIVIDE = 785,
+    T_MODULUS = 787
+  };
+#endif
+/* Tokens.  */
+#define END 0
+#define K_ADD 258
+#define K_ALL 259
+#define K_ALLOCATE 260
+#define K_ALTER 261
+#define K_ANY 262
+#define K_ARE 263
+#define K_ARRAY 264
+#define K_AS 265
+#define K_ASENSITIVE 266
+#define K_ASYMMETRIC 267
+#define K_AT 268
+#define K_ATOMIC 269
+#define K_AUTHORIZATION 270
+#define K_BEGIN 271
+#define K_BETWEEN 272
+#define K_BIGINT 273
+#define K_BINARY 274
+#define K_BIT 275
+#define K_BLOB 276
+#define K_BOOLEAN 277
+#define K_BOTH 278
+#define K_BY 279
+#define K_CALL 280
+#define K_CALLED 281
+#define K_CASCADED 282
+#define K_CASE 283
+#define K_CAST 284
+#define K_CHAR 285
+#define K_CHARACTER 286
+#define K_CHECK 287
+#define K_CLOB 288
+#define K_CLOSE 289
+#define K_COLLATE 290
+#define K_COLUMN 291
+#define K_COMMIT 292
+#define K_CONNECT 293
+#define K_CONSTRAINT 294
+#define K_CONTINUE 295
+#define K_CORRESPONDING 296
+#define K_CREATE 297
+#define K_CROSS 298
+#define K_CUBE 299
+#define K_CURRENT 300
+#define K_CURRENT_DATE 301
+#define K_CURRENT_DEFAULT_TRANSFORM_GROUP 302
+#define K_CURRENT_PATH 303
+#define K_CURRENT_ROLE 304
+#define K_CURRENT_TIME 305
+#define K_CURRENT_TIMESTAMP 306
+#define K_CURRENT_TRANSFORM_GROUP_FOR_TYPE 307
+#define K_CURRENT_USER 308
+#define K_CURSOR 309
+#define K_CYCLE 310
+#define K_DATE 311
+#define K_DAY 312
+#define K_DEALLOCATE 313
+#define K_DEC 314
+#define K_DECIMAL 315
+#define K_DECLARE 316
+#define K_DEFAULT 317
+#define K_DELETE 318
+#define K_DEREF 319
+#define K_DESCRIBE 320
+#define K_DETERMINISTIC 321
+#define K_DISCONNECT 322
+#define K_DISTINCT 323
+#define K_DOUBLE 324
+#define K_DROP 325
+#define K_DYNAMIC 326
+#define K_EACH 327
+#define K_ELEMENT 328
+#define K_ELSE 329
+#define K_END 330
+#define K_END_EXEC 331
+#define K_ESCAPE 332
+#define K_EXCEPT 333
+#define K_EXEC 334
+#define K_EXECUTE 335
+#define K_EXISTS 336
+#define K_EXTERNAL 337
+#define K_FALSE 338
+#define K_FETCH 339
+#define K_FILTER 340
+#define K_FLOAT 341
+#define K_FOR 342
+#define K_FOREIGN 343
+#define K_FREE 344
+#define K_FROM 345
+#define K_FULL 346
+#define K_FUNCTION 347
+#define K_GET 348
+#define K_GLOBAL 349
+#define K_GRANT 350
+#define K_GROUP 351
+#define K_GROUPING 352
+#define K_HAVING 353
+#define K_HOLD 354
+#define K_HOUR 355
+#define K_IDENTITY 356
+#define K_IMMEDIATE 357
+#define K_IN 358
+#define K_INDICATOR 359
+#define K_INNER 360
+#define K_INOUT 361
+#define K_INPUT 362
+#define K_INSENSITIVE 363
+#define K_INSERT 364
+#define K_INT 365
+#define K_INTEGER 366
+#define K_INTERSECT 367
+#define K_INTERVAL 368
+#define K_INTO 369
+#define K_IS 370
+#define K_ISOLATION 371
+#define K_JOIN 372
+#define K_LANGUAGE 373
+#define K_LARGE 374
+#define K_LATERAL 375
+#define K_LEADING 376
+#define K_LEFT 377
+#define K_LIKE 378
+#define K_LOCAL 379
+#define K_LOCALTIME 380
+#define K_LOCALTIMESTAMP 381
+#define K_MATCH 382
+#define K_MEMBER 383
+#define K_MERGE 384
+#define K_METHOD 385
+#define K_MINUTE 386
+#define K_MODIFIES 387
+#define K_MODULE 388
+#define K_MONTH 389
+#define K_MULTISET 390
+#define K_NATIONAL 391
+#define K_NATURAL 392
+#define K_NCHAR 393
+#define K_NCLOB 394
+#define K_NEW 395
+#define K_NO 396
+#define K_NONE 397
+#define K_NULL 398
+#define K_NUMERIC 399
+#define K_OF 400
+#define K_OLD 401
+#define K_ON 402
+#define K_ONLY 403
+#define K_OPEN 404
+#define K_ORDER 405
+#define K_OUT 406
+#define K_OUTER 407
+#define K_OUTPUT 408
+#define K_OVER 409
+#define K_OVERLAPS 410
+#define K_PARAMETER 411
+#define K_PARTITION 412
+#define K_PRECISION 413
+#define K_PREPARE 414
+#define K_PRIMARY 415
+#define K_PROCEDURE 416
+#define K_RANGE 417
+#define K_READS 418
+#define K_REAL 419
+#define K_RECURSIVE 420
+#define K_REF 421
+#define K_REFERENCES 422
+#define K_REFERENCING 423
+#define K_REGR_AVGX 424
+#define K_REGR_AVGY 425
+#define K_REGR_COUNT 426
+#define K_REGR_INTERCEPT 427
+#define K_REGR_R2 428
+#define K_REGR_SLOPE 429
+#define K_REGR_SXX 430
+#define K_REGR_SXY 431
+#define K_REGR_SYY 432
+#define K_RELEASE 433
+#define K_RESULT 434
+#define K_RETURN 435
+#define K_RETURNS 436
+#define K_REVOKE 437
+#define K_RIGHT 438
+#define K_ROLLBACK 439
+#define K_ROLLUP 440
+#define K_ROW 441
+#define K_ROWS 442
+#define K_SAVEPOINT 443
+#define K_SCROLL 444
+#define K_SEARCH 445
+#define K_SECOND 446
+#define K_SELECT 447
+#define K_SENSITIVE 448
+#define K_SESSION_USER 449
+#define K_SET 450
+#define K_SIMILAR 451
+#define K_SMALLINT 452
+#define K_SOME 453
+#define K_SPECIFIC 454
+#define K_SPECIFICTYPE 455
+#define K_SQL 456
+#define K_SQLEXCEPTION 457
+#define K_SQLSTATE 458
+#define K_SQLWARNING 459
+#define K_START 460
+#define K_STATIC 461
+#define K_SUBMULTISET 462
+#define K_SYMMETRIC 463
+#define K_SYSTEM 464
+#define K_SYSTEM_USER 465
+#define K_TABLE 466
+#define K_THEN 467
+#define K_TIME 468
+#define K_TIMESTAMP 469
+#define K_TIMEZONE_HOUR 470
+#define K_TIMEZONE_MINUTE 471
+#define K_TO 472
+#define K_TRAILING 473
+#define K_TRANSLATION 474
+#define K_TREAT 475
+#define K_TRIGGER 476
+#define K_TRUE 477
+#define K_UESCAPE 478
+#define K_UNION 479
+#define K_UNIQUE 480
+#define K_UNKNOWN 481
+#define K_UNNEST 482
+#define K_UPDATE 483
+#define K_UPPER 484
+#define K_USER 485
+#define K_USING 486
+#define K_VALUE 487
+#define K_VALUES 488
+#define K_VAR_POP 489
+#define K_VAR_SAMP 490
+#define K_VARCHAR 491
+#define K_VARYING 492
+#define K_WHEN 493
+#define K_WHENEVER 494
+#define K_WHERE 495
+#define K_WIDTH_BUCKET 496
+#define K_WINDOW 497
+#define K_WITH 498
+#define K_WITHIN 499
+#define K_WITHOUT 500
+#define K_YEAR 501
+#define K_A 502
+#define K_ABS 503
+#define K_ABSOLUTE 504
+#define K_ACTION 505
+#define K_ADA 506
+#define K_ADMIN 507
+#define K_AFTER 508
+#define K_ALWAYS 509
+#define K_ASC 510
+#define K_ASSERTION 511
+#define K_ASSIGNMENT 512
+#define K_ATTRIBUTE 513
+#define K_ATTRIBUTES 514
+#define K_AVG 515
+#define K_BEFORE 516
+#define K_BERNOULLI 517
+#define K_BREADTH 518
+#define K_C 519
+#define K_CARDINALITY 520
+#define K_CASCADE 521
+#define K_CATALOG 522
+#define K_CATALOG_NAME 523
+#define K_CEIL 524
+#define K_CEILING 525
+#define K_CHAIN 526
+#define K_CHARACTERISTICS 527
+#define K_CHARACTERS 528
+#define K_CHARACTER_LENGTH 529
+#define K_CHARACTER_SET_CATALOG 530
+#define K_CHARACTER_SET_NAME 531
+#define K_CHARACTER_SET_SCHEMA 532
+#define K_CHAR_LENGTH 533
+#define K_CHECKED 534
+#define K_CLASS_ORIGIN 535
+#define K_COALESCE 536
+#define K_COBOL 537
+#define K_CODE_UNITS 538
+#define K_COLLATION 539
+#define K_COLLATION_CATALOG 540
+#define K_COLLATION_NAME 541
+#define K_COLLATION_SCHEMA 542
+#define K_COLLECT 543
+#define K_COLUMN_NAME 544
+#define K_COMMAND_FUNCTION 545
+#define K_COMMAND_FUNCTION_CODE 546
+#define K_COMMITTED 547
+#define K_CONDITION 548
+#define K_CONDITION_NUMBER 549
+#define K_CONNECTION_NAME 550
+#define K_CONSTRAINTS 551
+#define K_CONSTRAINT_CATALOG 552
+#define K_CONSTRAINT_NAME 553
+#define K_CONSTRAINT_SCHEMA 554
+#define K_CONSTRUCTORS 555
+#define K_CONTAINS 556
+#define K_CONVERT 557
+#define K_CORR 558
+#define K_COUNT 559
+#define K_COVAR_POP 560
+#define K_COVAR_SAMP 561
+#define K_CUME_DIST 562
+#define K_CURRENT_COLLATION 563
+#define K_CURSOR_NAME 564
+#define K_DATA 565
+#define K_DATETIME_INTERVAL_CODE 566
+#define K_DATETIME_INTERVAL_PRECISION 567
+#define K_DEFAULTS 568
+#define K_DEFERRABLE 569
+#define K_DEFERRED 570
+#define K_DEFINED 571
+#define K_DEFINER 572
+#define K_DEGREE 573
+#define K_DENSE_RANK 574
+#define K_DEPTH 575
+#define K_DERIVED 576
+#define K_DESC 577
+#define K_DESCRIPTOR 578
+#define K_DIAGNOSTICS 579
+#define K_DISPATCH 580
+#define K_DOMAIN 581
+#define K_DYNAMIC_FUNCTION 582
+#define K_DYNAMIC_FUNCTION_CODE 583
+#define K_EQUALS 584
+#define K_EVERY 585
+#define K_EXCEPTION 586
+#define K_EXCLUDE 587
+#define K_EXCLUDING 588
+#define K_EXP 589
+#define K_EXTRACT 590
+#define K_FINAL 591
+#define K_FIRST 592
+#define K_FLOOR 593
+#define K_FOLLOWING 594
+#define K_FORTRAN 595
+#define K_FOUND 596
+#define K_FUSION 597
+#define K_G 598
+#define K_GENERAL 599
+#define K_GO 600
+#define K_GOTO 601
+#define K_GRANTED 602
+#define K_HIERARCHY 603
+#define K_IMPLEMENTATION 604
+#define K_INCLUDING 605
+#define K_INCREMENT 606
+#define K_INITIALLY 607
+#define K_INSTANCE 608
+#define K_INSTANTIABLE 609
+#define K_INTERSECTION 610
+#define K_INVOKER 611
+#define K_K 612
+#define K_KEY 613
+#define K_KEY_MEMBER 614
+#define K_KEY_TYPE 615
+#define K_LAST 616
+#define K_LENGTH 617
+#define K_LEVEL 618
+#define K_LN 619
+#define K_LOCATOR 620
+#define K_LOWER 621
+#define K_M 622
+#define K_MAP 623
+#define K_MATCHED 624
+#define K_MAX 625
+#define K_MAXVALUE 626
+#define K_MESSAGE_LENGTH 627
+#define K_MESSAGE_OCTET_LENGTH 628
+#define K_MESSAGE_TEXT 629
+#define K_MIN 630
+#define K_MINVALUE 631
+#define K_MOD 632
+#define K_MORE 633
+#define K_MUMPS 634
+#define K_NAME 635
+#define K_NAMES 636
+#define K_NESTING 637
+#define K_NEXT 638
+#define K_NORMALIZE 639
+#define K_NORMALIZED 640
+#define K_NULLABLE 641
+#define K_NULLIF 642
+#define K_NULLS 643
+#define K_NUMBER 644
+#define K_OBJECT 645
+#define K_OCTETS 646
+#define K_OCTET_LENGTH 647
+#define K_OPTION 648
+#define K_OPTIONS 649
+#define K_ORDERING 650
+#define K_ORDINALITY 651
+#define K_OTHERS 652
+#define K_OVERLAY 653
+#define K_OVERRIDING 654
+#define K_PAD 655
+#define K_PARAMETER_MODE 656
+#define K_PARAMETER_NAME 657
+#define K_PARAMETER_ORDINAL_POSITION 658
+#define K_PARAMETER_SPECIFIC_CATALOG 659
+#define K_PARAMETER_SPECIFIC_NAME 660
+#define K_PARAMETER_SPECIFIC_SCHEMA 661
+#define K_PARTIAL 662
+#define K_PASCAL 663
+#define K_PATH 664
+#define K_PERCENTILE_CONT 665
+#define K_PERCENTILE_DISC 666
+#define K_PERCENT_RANK 667
+#define K_PLACING 668
+#define K_PLI 669
+#define K_POSITION 670
+#define K_POWER 671
+#define K_PRECEDING 672
+#define K_PRESERVE 673
+#define K_PRIOR 674
+#define K_PRIVILEGES 675
+#define K_PUBLIC 676
+#define K_RANK 677
+#define K_READ 678
+#define K_RELATIVE 679
+#define K_REPEATABLE 680
+#define K_RESTART 681
+#define K_RETURNED_CARDINALITY 682
+#define K_RETURNED_LENGTH 683
+#define K_RETURNED_OCTET_LENGTH 684
+#define K_RETURNED_SQLSTATE 685
+#define K_ROLE 686
+#define K_ROUTINE 687
+#define K_ROUTINE_CATALOG 688
+#define K_ROUTINE_NAME 689
+#define K_ROUTINE_SCHEMA 690
+#define K_ROW_COUNT 691
+#define K_ROW_NUMBER 692
+#define K_SCALE 693
+#define K_SCHEMA 694
+#define K_SCHEMA_NAME 695
+#define K_SCOPE_CATALOG 696
+#define K_SCOPE_NAME 697
+#define K_SCOPE_SCHEMA 698
+#define K_SECTION 699
+#define K_SECURITY 700
+#define K_SELF 701
+#define K_SEQUENCE 702
+#define K_SERIALIZABLE 703
+#define K_SERVER_NAME 704
+#define K_SESSION 705
+#define K_SETS 706
+#define K_SIMPLE 707
+#define K_SIZE 708
+#define K_SOURCE 709
+#define K_SPACE 710
+#define K_SPECIFIC_NAME 711
+#define K_SQRT 712
+#define K_STATE 713
+#define K_STATEMENT 714
+#define K_STDDEV_POP 715
+#define K_STDDEV_SAMP 716
+#define K_STRUCTURE 717
+#define K_STYLE 718
+#define K_SUBCLASS_ORIGIN 719
+#define K_SUBSTRING 720
+#define K_SUM 721
+#define K_TABLESAMPLE 722
+#define K_TABLE_NAME 723
+#define K_TEMPORARY 724
+#define K_TIES 725
+#define K_TOP_LEVEL_COUNT 726
+#define K_TRANSACTION 727
+#define K_TRANSACTIONS_COMMITTED 728
+#define K_TRANSACTIONS_ROLLED_BACK 729
+#define K_TRANSACTION_ACTIVE 730
+#define K_TRANSFORM 731
+#define K_TRANSFORMS 732
+#define K_TRANSLATE 733
+#define K_TRIGGER_CATALOG 734
+#define K_TRIGGER_NAME 735
+#define K_TRIGGER_SCHEMA 736
+#define K_TRIM 737
+#define K_TYPE 738
+#define K_UNBOUNDED 739
+#define K_UNCOMMITTED 740
+#define K_UNDER 741
+#define K_UNNAMED 742
+#define K_USAGE 743
+#define K_USER_DEFINED_TYPE_CATALOG 744
+#define K_USER_DEFINED_TYPE_CODE 745
+#define K_USER_DEFINED_TYPE_NAME 746
+#define K_USER_DEFINED_TYPE_SCHEMA 747
+#define K_VIEW 748
+#define K_WORK 749
+#define K_WRITE 750
+#define K_ZONE 751
+#define K_TEXT 752
+#define IDENTIFIER 753
+#define INTEGER 754
+#define FLOAT 755
+#define STRING_LITERAL 756
+#define T_END 757
+#define T_COMMA 758
+#define T_BRACKET_OPEN 759
+#define T_BRACKET_CLOSE 760
+#define K_OR 761
+#define K_AND 763
+#define T_NOT_EQUALS 765
+#define T_EQUALS 767
+#define T_GREATER_THAN 769
+#define T_LESS_THAN 771
+#define T_GREATER_THAN_EQUAL 773
+#define T_LESS_THAN_EQUAL 775
+#define T_PLUS 777
+#define T_MINUS 779
+#define K_NOT 781
+#define T_ASTERISK 783
+#define T_DIVIDE 785
+#define T_MODULUS 787
+
+/* Value type.  */
+#if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
+typedef int YYSTYPE;
+# define YYSTYPE_IS_TRIVIAL 1
+# define YYSTYPE_IS_DECLARED 1
+#endif
+
+
+
+int yyparse (EagleDbParser *parser, void* scanner);
+
+#endif /* !YY_YY_Y_TAB_H_INCLUDED  */

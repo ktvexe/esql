@@ -1,0 +1,199 @@
+./test-runner --all-suites
+
+
+     CUnit - A unit testing framework for C - Version 2.1-2
+     http://cunit.sourceforge.net/
+
+
+Suite: MainSuite
+  Test: EagleObject_equals ...passed
+  Test: EagleLogger_GetLogFile ...passed
+  Test: EagleUtils_CompareWithoutCase ...passed
+  Test: EagleLinkedList_isEmpty ...passed
+  Test: EagleLinkedList_begin ...passed
+  Test: EagleLinkedList_end ...passed
+  Test: EagleLinkedListItem_Delete ...passed
+  Test: EagleLock_Delete ...passed
+  Test: EaglePlanOperation_Delete ...passed
+  Test: EaglePlanBufferProvider_Delete ...passed
+  Test: EagleWorkers_Delete ...passed
+  Test: EaglePageProvider_DeleteStream_ ...passed
+  Test: EaglePageProvider_DeleteInt_ ...passed
+  Test: EaglePageProvider_DeleteIntArray_ ...passed
+  Test: EagleWorker_Delete ...passed
+  Test: EagleLinkedList_DeleteItems ...passed
+  Test: EaglePageProvider_CreateFromInt2 ...FAILED
+    1. tests/suites/MainSuite1.c:784  - CUNIT_ASSERT_NULL: Expression "EaglePageProviderSingle_NewInt(0, 1, NULL)" was not NULL
+  Test: EagleLinkedList_get ...passed
+  Test: EagleLinkedList_add ...passed
+  Test: EagleLinkedList_toArray ...passed
+  Test: EagleLinkedList_pop ...passed
+  Test: EagleMemory_Allocate ...passed
+  Test: EagleMemory_MultiFree ...passed
+  Test: EagleLogger_LastEvent ...passed
+  Test: EagleLogger_lastEvent ...passed
+  Test: EagleWorker_runJobPage ...passed
+  Test: EagleInstance_nextJob1 ...passed
+  Test: EaglePlan_getExecutionSeconds ...passed
+  Test: EaglePlan_prepareBuffers ...passed
+  Test: EagleDataType_nameToType ...passed
+  Test: EagleInstance_Delete ...passed
+  Test: EagleLinkedList_New ...passed
+  Test: EaglePageProvider_TotalPages ...passed
+  Test: EaglePageProviderArray_NewInt ...passed
+  Test: EaglePageProviderStream_New ...passed
+  Test: EaglePageProvider_Delete ...passed
+  Test: EaglePageProvider_add ...passed
+  Test: EaglePlan_Delete ...passed
+  Test: EaglePlan_toString ...passed
+  Test: EaglePlan_getBufferProviderByName ...passed
+  Test: EaglePlanBufferProvider_toString1 ...passed
+  Test: EaglePlanJob_Delete ...passed
+  Test: EaglePlanOperation_toString ...passed
+  Test: EagleLoggerSeverity_toString ...passed
+  Test: EagleLogger_log ...passed
+  Test: EagleLogger_logEvent ...passed
+  Test: EagleLogger_Get ...passed
+  Test: EagleLogger_Log ...passed
+  Test: EagleLogger_LogEvent ...passed
+  Test: EaglePage_toString ...passed
+  Test: EaglePage_Copy ...passed
+  Test: EaglePageOperations_SendPageToProvider ...passed
+  Test: EaglePageProvider_addStream_ ...passed
+  Test: EaglePlanJob_New ...passed
+  Test: _InstanceSingle ...passed
+  Test: _InstanceMulti ...passed
+  Test: EaglePage_RealCopyVarchar_ ...passed
+  Test: EaglePage_RealCopyFloat_ ...passed
+  Test: EaglePage_RealCopyInt_ ...passed
+  Test: EaglePageProviderArray_isRandomAccess ...passed
+  Test: EaglePageProviderStream_isRandomAccess ...passed
+  Test: EaglePageProviderSingle_isRandomAccess ...passed
+  Test: EaglePlan_getRealExecutionSeconds ...FAILED
+    1. tests/suites/MainSuite2.c:539  - CUNIT_VERIFY_EQUAL_DOUBLE: Expected 1.4647e+09 from expression "time", but received 0.001 from expression "0.001"
+  Test: EaglePageProviderArray_getPageUnknown ...passed
+  Test: EaglePageProviderArray_getPageVarchar ...passed
+  Test: EaglePageProviderArray_getPageFloat ...passed
+  Test: EaglePageProviderArray_getPageInteger ...passed
+  Test: EaglePageProviderArray_nextPageUnknown ...passed
+  Test: EaglePageProviderArray_nextPageVarchar ...passed
+  Test: EaglePageProviderArray_nextPageFloat ...passed
+  Test: EaglePageProvider_getPage ...passed
+  Test: EaglePageProviderVirtual_getPage ...passed
+  Test: EaglePageProviderVirtual_isRandomAccess ...passed
+  Test: EaglePageProviderSingle_getPage ...passed
+  Test: EaglePageProviderStream_getPage ...passed
+  Test: EaglePageOperations_SendPageToProviderFloat_ ...passed
+  Test: EaglePlanBufferProvider_toString2 ...passed
+  Test: EaglePlanBufferProvider_NewWithValue ...passed
+  Test: EagleWorker_runJobLiteral2 ...passed
+  Test: EagleWorker_runJobLiteral1 ...passed
+  Test: EaglePageProviderSingle_nextPage3 ...passed
+  Test: EaglePageProviderSingle_nextPage4 ...passed
+  Test: EaglePageProviderSingle_nextPage2 ...passed
+  Test: EaglePageProviderSingle_nextPage1 ...passed
+  Test: EaglePageProviderArray_nextPageInt ...passed
+  Test: EaglePageProviderVirtual_Delete ...passed
+  Test: EaglePageProviderVirtual_New ...passed
+  Test: EaglePageProvider_reset ...passed
+  Test: EagleLinkedList_deleteObject4 ...passed
+  Test: EagleLinkedList_deleteObject3 ...passed
+  Test: EagleLinkedList_deleteObject2 ...passed
+  Test: EagleLinkedList_deleteObject1 ...passed
+  Test: EagleInstance_nextJob2 ...passed
+Suite: DBSuite
+  Test: _DuplicateSchema ...passed
+  Test: _DuplicateTable ...Table "default.sometable" created.
+
+Table "default.sometable" already exists.
+
+passed
+  Test: EagleDbSqlInsert_Delete ...passed
+  Test: EagleDbTable_getColumnIndex ...passed
+  Test: _INSERT_Good ...1 row inserted
+
+passed
+  Test: _INSERT_BadColumnName ...passed
+  Test: _INSERT_BadTableName ...passed
+  Test: EagleDbColumn_Delete ...passed
+  Test: EagleDbSqlBinaryExpression_DeleteRecursive ...passed
+  Test: EagleDbSqlBinaryExpression_Delete ...passed
+  Test: EagleDbTable_DeleteWithColumns ...passed
+  Test: EagleDbTable_Delete ...passed
+  Test: EagleDbConsole_Delete ...passed
+  Test: EagleDbSqlValue_Delete ...passed
+  Test: EagleDbTuple_Delete ...passed
+  Test: EagleDbInstance_Delete ...passed
+  Test: EagleDbInstance_DeleteAll ...passed
+  Test: EagleDbSqlExpression_Delete ...passed
+  Test: EagleDbSqlSelect_Delete2 ...passed
+  Test: EagleDbInstance_getSchema ...passed
+  Test: EagleDbInstance_getTable2 ...passed
+  Test: EagleDbInstance_getTable1 ...passed
+  Test: EagleDbInstance_execute3 ...passed
+  Test: EagleDbInstance_execute2 ...passed
+  Test: EagleDbInstance_execute1 ...Table "default.sometable" created.
+
+passed
+  Test: EagleDbInstance_executeCreateTable ...Table "default.mytable" created.
+
+passed
+  Test: EagleDbInstance_executeSelect2 ...0 records, 0.000 seconds
+
+passed
+  Test: EagleDbInstance_executeSelect1 ...passed
+  Test: EagleDbInstance_PrintResults ...
+ name 
+------
+  123 
+
+1 record, 0.000 seconds
+
+passed
+  Test: EagleDbSqlSelect_parse3 ...passed
+  Test: EagleDbSqlSelect_parse2 ...passed
+  Test: EagleDbSqlSelect_parse1 ...passed
+  Test: EagleDbTableData_insert ...passed
+  Test: EagleDbTableData_Delete ...passed
+  Test: EagleDbTableData_New ...passed
+  Test: EagleDbTuple_toString ...passed
+  Test: EagleDbTuple_setVarchar ...passed
+  Test: EagleDbTuple_setInt ...passed
+  Test: EagleDbSqlExpression_toString ...passed
+  Test: EagleDbSqlExpression_CompilePlanIntoBuffer1 ...passed
+  Test: EagleDbSqlValue_toString1 ...passed
+  Test: EagleDbColumn_New ...passed
+  Test: EagleDbConsole_New ...passed
+  Test: EagleDbSqlBinaryExpression_New ...passed
+  Test: EagleDbSqlExpression_CompilePlan ...passed
+  Test: EagleDbSqlSelect_New ...passed
+  Test: EagleDbSqlSelect_Delete ...passed
+  Test: EagleDbSqlValue_NewWithInteger ...passed
+  Test: EagleDbTable_New ...passed
+  Test: EagleDbTuple_New ...passed
+  Test: EagleDbInstance_executeParser ...passed
+  Test: EagleDbSqlBinaryExpression_GetLeftOperation ...passed
+  Test: EagleDbSqlBinaryExpression_GetRightOperation ...passed
+  Test: EagleDbSqlExpression_CompilePlanIntoBuffer_Value_ ...passed
+  Test: EagleDbSqlValueType_toString ...passed
+  Test: EagleDbTuple_set ...passed
+  Test: EagleDbSqlValue_castable ...passed
+  Test: EagleDbSqlValue_getVarchar ...passed
+  Test: EagleDbSqlValue_getFloat_2 ...passed
+  Test: EagleDbSqlValue_getFloat_1 ...passed
+  Test: EagleDbSqlValue_getInteger ...passed
+  Test: EagleDbSqlCastExpression_Delete ...passed
+  Test: EagleDbSqlCastExpression_DeleteRecursive ...passed
+  Test: EagleDbSqlExpression_CompilePlanIntoBuffer_Cast_ ...passed
+  Test: EagleDbSqlExpression_CompilePlanIntoBuffer_Unary_ ...passed
+  Test: EagleDbSqlUnaryExpression_GetOperation ...passed
+  Test: EagleDbSqlExpression_CompilePlanIntoBuffer_Binary_ ...passed
+  Test: EagleDbSqlValue_toString_3 ...passed
+  Test: EagleDbSqlBinaryExpression_GetPageOperation ...passed
+  Test: EagleDbSqlFunctionExpression_DeleteRecursive ...passed
+  Test: EagleDbSqlFunctionExpression_Delete ...passed
+  Test: EagleDbSqlExpression_CompilePlanIntoBuffer_Function_ ...passed
+  Test: EagleDbSqlValue_toString_2 ...passed
+  Test: EagleDbParser_IsNonreservedKeyword ...passed
+  Test: EagleDbInformationSchema_Delete ...passed
+  Test: EagleDbInformationSchema_tables ...Makefile:107: recipe for target 'check' failed
